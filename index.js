@@ -14,7 +14,7 @@ app.use(bodyparser.json());
 const uri =`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.twf2c.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
 const option = {useNewUrlParser:true, useUnifiedTopology:true};
   mongoose.connect(uri, option)
-    .then(() => console.log('connected'))
+    .then(() => console.log('DB connected'))
     .catch(e => console.log('error: ',e))
 
 // importar rutas

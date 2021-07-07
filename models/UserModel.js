@@ -20,7 +20,7 @@ const userSchema = mongoose.Schema({
   },
   rol:{
     type: String,
-    default: 'user'        
+    default: 'user'
   },
   date:{
     type: Date,
@@ -28,4 +28,4 @@ const userSchema = mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('UserModel', userSchema);
+module.exports = mongoose.model('User', userSchema);
